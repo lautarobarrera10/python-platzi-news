@@ -25,8 +25,8 @@ class TestSettings(unittest.TestCase):
         self.assertEqual(settings.openai_api_key, "test_openai")
         self.assertEqual(settings.max_articles, 10)
         self.assertEqual(settings.request_timeout, 10)
-        self.assertEqual(settings.openai_model, "gpt-4")
-        self.assertEqual(settings.openai_max_tokens, 500)
+        self.assertEqual(settings.openai_model, "gpt-5-mini")
+        self.assertEqual(settings.openai_max_tokens, 2000)
 
     # Skipping test for missing keys as global settings is created at import time
     # and testing it requires complex mocking. The class validation is tested elsewhere.

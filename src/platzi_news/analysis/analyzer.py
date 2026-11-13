@@ -75,8 +75,7 @@ class OpenAIAnalyzer:
                     },
                     {"role": "user", "content": prompt},
                 ],
-                max_tokens=settings.openai_max_tokens,
-                temperature=0.7,
+                max_completion_tokens=settings.openai_max_tokens,
             )
             content = response.choices[0].message.content
             if content is None:

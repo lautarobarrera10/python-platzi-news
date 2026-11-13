@@ -15,7 +15,7 @@ La aplicación integra tres APIs principales:
 
 ✅ **Búsqueda de Noticias**: Consulta noticias en tiempo real desde The Guardian y News API con un solo comando
 
-✅ **Análisis con IA**: Utiliza GPT-4 de OpenAI para analizar artículos y responder preguntas específicas sobre las noticias encontradas
+✅ **Análisis con IA**: Utiliza GPT-5 mini de OpenAI para analizar artículos y responder preguntas específicas sobre las noticias encontradas
 
 ✅ **Interfaz Simple**: Comandos intuitivos y fáciles de usar desde la terminal
 
@@ -99,8 +99,8 @@ OPENAI_API_KEY=tu_clave_de_openai_aqui
 # Configuraciones opcionales
 MAX_ARTICLES=10
 REQUEST_TIMEOUT=10
-OPENAI_MODEL=gpt-4
-OPENAI_MAX_TOKENS=500
+OPENAI_MODEL=gpt-5-mini
+OPENAI_MAX_TOKENS=2000
 ```
 
 ### Claves de API Requeridas
@@ -111,8 +111,8 @@ OPENAI_MAX_TOKENS=500
 ### Configuraciones Opcionales
 - `MAX_ARTICLES`: Número máximo de artículos a obtener (por defecto: 10)
 - `REQUEST_TIMEOUT`: Tiempo de espera para las solicitudes API en segundos (por defecto: 10)
-- `OPENAI_MODEL`: Modelo de OpenAI a usar para el análisis (por defecto: gpt-4)
-- `OPENAI_MAX_TOKENS`: Número máximo de tokens en la respuesta de OpenAI (por defecto: 500)
+- `OPENAI_MODEL`: Modelo de OpenAI a usar para el análisis (por defecto: gpt-5-mini)
+- `OPENAI_MAX_TOKENS`: Número máximo de tokens en la respuesta de OpenAI (por defecto: 2000)
 
 ## Logging y Depuración
 
@@ -168,7 +168,7 @@ platzi-news ask "energías renovables" "¿Cuáles son las tendencias principales
 - 🔄 **Actualizado**: Acceso a noticias en tiempo real
 - 🎚️ **Flexible**: Elige la fuente que prefieras según tus necesidades
 - 🛠️ **Extensible**: Fácil de agregar nuevas fuentes de noticias
-- 💡 **Inteligente**: Análisis contextual gracias a GPT-4
+- 💡 **Inteligente**: Análisis contextual gracias a GPT-5 mini
 
 ## Desarrollo
 

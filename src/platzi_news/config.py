@@ -25,9 +25,9 @@ class Settings(BaseSettings):
     sentry_dsn: str | None = Field(None, description="Sentry DSN")
     max_articles: int = Field(10, description="Maximum number of articles to fetch")
     request_timeout: int = Field(10, description="Timeout for API requests in seconds")
-    openai_model: str = Field("gpt-4", description="OpenAI model to use for analysis")
+    openai_model: str = Field("gpt-5-mini", description="OpenAI model to use for analysis")
     openai_max_tokens: int = Field(
-        500, description="Maximum tokens for OpenAI response"
+        2000, description="Maximum tokens for OpenAI response"
     )
 
 
